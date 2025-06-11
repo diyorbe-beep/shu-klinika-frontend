@@ -48,7 +48,7 @@ const handleSubmit = async (e) => {
   if (!validate()) return;
   
   try {
-    const response = await axios.post('http://localhost:5000/api/auth/register', formData);
+    const response = await axios.post('https://backeeeeeeend.onrender.com/api/auth/register', formData);
     
     if (response.data.success) {
       setSnackbarMessage('Muvaffaqiyatli ro‘yxatdan o‘tdingiz! Iltimos, tizimga kiring');
